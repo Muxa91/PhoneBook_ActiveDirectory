@@ -1,0 +1,23 @@
+{%extends 'template.html'%}
+{%block body%}
+        <div class="block">
+            <ul>
+            <table class="container">
+                 <tr>
+                      <th>Сотрудник</th>
+                      <th>Должность</th>
+                      <th>Номер</th>
+                     <th>почта</th>
+                 </tr>
+        {%for x in list%}
+                <tr>
+                    <td>{{x[0]}}</td>
+                    <td> {{x[2]}}</td>
+                    <td><a href=callto:{{x[1]}}>{{x[1]}}</a></td>
+                    <td><a href=https://zimbra.eskaro.ru/?view=compose&to=mailto:{{x[3]}} target="_blank">{{x[3]}}</a></td>
+                </tr>
+        {%endfor%}
+            </table>
+            </ul>
+        </div>
+{%endblock%}

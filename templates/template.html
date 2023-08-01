@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title>Телефонная книга Eskaro AS</title>
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/logo_ru.ico')}}" type="image/x-icon">
+<head>
+
+    <div class="parent">
+        <header>
+            <img class="logo" src="{{ url_for('static', filename='img/logo_ru.png') }}" />
+
+            <div class="Phonebook"><p1>Телефонная книга "Эскаро Кемикал АС"</p1></div>
+        </header>
+        <div class="alphabet">
+<!--            <tr>
+              <form  action="/search/" method="get">
+                <button type="submit" class="search-button" name="search" value="A">A<i class="fa fa-search"></i></button>
+              </form>
+            </tr>-->
+        </div>
+        {%block body%}{%endblock%}
+        <div class="search-div">
+              <form  action="/search/" method="get">
+                <input type="text" class="search-input" name="search" maxlength="20" required>
+
+                <button type="submit" class="search-button">Поиск<i class="fa fa-search"></i></button>
+
+            </form>
+            </form>
+        </div>
+    </div>
+
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
