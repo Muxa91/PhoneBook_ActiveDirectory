@@ -20,13 +20,13 @@
         </div>
         {%block body%}{%endblock%}
         <div class="search-div">
+
               <form  action="/search/" method="get">
                 <input type="text" class="search-input" name="search" maxlength="20" required>
-
-                <button type="submit" class="search-button">Поиск<i class="fa fa-search"></i></button>
-
-            </form>
-            </form>
+                <button type="submit" class="search-button">Поиск</button>
+                <button class="search-reset-button" form="search-reset" >Сброс</button>
+              </form>
+              <form action="/"  id="search-reset"></form>
         </div>
     </div>
 

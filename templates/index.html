@@ -7,14 +7,16 @@
                       <th>Сотрудник</th>
                       <th>Должность</th>
                       <th>Номер</th>
-                     <th>почта</th>
+                      <th>Мобильный</th>
+                      <th>почта</th>
                  </tr>
         {%for x in list%}
                 <tr>
                     <td>{{x[0]}}</td>
                     <td> {{x[2]}}</td>
                     <td><a href=callto:{{x[1]}}>{{x[1]}}</a></td>
-                    <td><a href=https://zimbra.eskaro.ru/?view=compose&to=mailto:{{x[3]}} target="_blank">{{x[3]}}</a></td>
+                    <td>{{x[3]}}</td>
+                    <td><a href=https://zimbra.eskaro.ru/?view=compose&to=mailto:{{x[4]}} target="_blank">{{x[4]}}</a></td>
                 </tr>
         {%endfor%}
             </table>

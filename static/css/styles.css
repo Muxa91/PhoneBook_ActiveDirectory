@@ -60,7 +60,7 @@ th{
 
     position: absolute;
     top: 40%;
-    left: 27.5%;
+    left: 21.5%;
     margin: -125px 0 0 -125px;
 
     }
@@ -76,7 +76,6 @@ th{
     padding:5px;
     width:20%;
     background: #FFE11B;
-
     box-shadow: 5px 5px 5px 0px rgba(169, 169, 169);
     border-radius: 0px 0px 30px 23px;
 
@@ -86,13 +85,18 @@ th{
     height: 30px;
 }
 .search-button{
-    margin-top: 5px;
-    margin-left:10px;
+    margin-top:4px;
     width: 70px;
     height: 30px;
     margin-left: auto;
     border-radius: 0px 0px 0px 23px;
 }
+.search-reset-button{
+    width: 70px;
+    height: 30px;
+    border-radius: 0px 0px 0px 0px;
+}
+
 .main{
     position=relative
 }
